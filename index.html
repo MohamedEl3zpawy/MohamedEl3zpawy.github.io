@@ -3,98 +3,142 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home - ON-RAI Gaming</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Mohamed Sameh - Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; background: #0a0a0f; color: #e0e0e0; }
+    header { background: linear-gradient(135deg, #00b4d8, #0077b6); padding: 50px 20px; text-align: center; }
+    header h1 { font-size: 2.8rem; color: #fff; letter-spacing: 2px; }
+    header h2 { font-size: 1.1rem; color: #caf0f8; margin-top: 10px; font-weight: 400; }
+    .contact { display: flex; justify-content: center; gap: 24px; margin-top: 20px; flex-wrap: wrap; }
+    .contact a { color: #fff; text-decoration: none; font-size: 0.9rem; background: rgba(255,255,255,0.15); padding: 6px 14px; border-radius: 20px; }
+    .contact a:hover { background: rgba(255,255,255,0.3); }
+    nav { background: #0d1117; display: flex; justify-content: center; gap: 30px; padding: 14px; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #1a1a2e; }
+    nav a { color: #00b4d8; text-decoration: none; font-size: 0.9rem; }
+    nav a:hover { color: #fff; }
+    section { max-width: 860px; margin: 40px auto; padding: 0 20px; }
+    h2.sec { color: #00b4d8; border-bottom: 2px solid #00b4d8; padding-bottom: 8px; margin-bottom: 20px; font-size: 1.4rem; }
+    .card { background: #0d1117; border: 1px solid #1a1a2e; border-radius: 12px; padding: 22px; margin-bottom: 16px; }
+    .card h3 { color: #caf0f8; margin-bottom: 6px; font-size: 1.05rem; }
+    .card p, .card li { color: #aaa; font-size: 0.92rem; line-height: 1.7; }
+    .card ul { padding-right: 20px; margin-top: 8px; }
+    .card .date { color: #00b4d8; font-size: 0.85rem; margin-bottom: 8px; }
+    .skills { display: flex; flex-wrap: wrap; gap: 10px; }
+    .skill { background: #0d1117; border: 1px solid #00b4d8; color: #00b4d8; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; }
+    .project-link { display: inline-block; margin-top: 12px; color: #00b4d8; text-decoration: none; font-size: 0.88rem; border: 1px solid #00b4d8; padding: 4px 12px; border-radius: 6px; }
+    .project-link:hover { background: #00b4d8; color: #000; }
+    .cert-badge { display: inline-block; background: #0d1117; border: 1px solid #ffd700; color: #ffd700; padding: 4px 12px; border-radius: 12px; font-size: 0.8rem; margin: 4px; }
+    footer { text-align: center; padding: 30px; color: #444; font-size: 0.85rem; border-top: 1px solid #1a1a2e; margin-top: 40px; }
+  </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="index.html" class="logo">ON-RAI Gaming</a>
-      <div class="nav-right">
-        <button id="menuBtn" class="nav-btn">☰ Menu</button>
-        <a href="cart.html" id="cartLink" class="nav-btn">Cart (<span id="cart-count">0</span>)</a>
-        <button id="loginBtn" class="nav-btn">Login</button>
-      </div>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="build.html">Build Configurator</a></li>
-        <li><a href="peripherals.html">Peripherals</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <div class="container">
-      <section class="hero">
-        <h1>Welcome to ON-RAI Gaming</h1>
-        <p>Your ultimate destination for gaming setups and rigs</p>
-      </section>
-
-      <section>
-        <h2>Featured Collections</h2>
-        <div class="grid grid-4">
-          
-          <div class="card">
-            <h4>Competitive FPS</h4>
-            <p class="price">$4,299</p>
-            <button class="btn add-to-cart" data-name="Competitive FPS" data-price="4299">ADD TO CART</button>
-          </div>
-
-          <div class="card">
-            <h4>4K Gaming</h4>
-            <p class="price">$3,999</p>
-            <button class="btn add-to-cart" data-name="4K Gaming" data-price="3999">ADD TO CART</button>
-          </div>
-
-          <div class="card">
-            <h4>Streaming Beast</h4>
-            <p class="price">$5,999</p>
-            <button class="btn add-to-cart" data-name="Streaming Beast" data-price="5999">ADD TO CART</button>
-          </div>
-
-          <div class="card">
-            <h4>Budget Gaming</h4>
-            <p class="price">$1,899</p>
-            <button class="btn add-to-cart" data-name="Budget Gaming" data-price="1899">ADD TO CART</button>
-          </div>
-
-        </div>
-      </section>
-    </div>
-  </main>
-
-  <div id="sidemenu">
-    <div class="close"><button id="closeMenu">✖</button></div>
-    <a href="index.html">Home</a>
-    <a href="build.html">Build Configurator</a>
-    <a href="peripherals.html">Peripherals</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
+<header>
+  <h1>Mohamed Sameh</h1>
+  <h2>Computer Science Student | Tech Community Founder | Web Developer</h2>
+  <div class="contact">
+    <a href="mailto:hamosameh202@gmail.com">✉ hamosameh202@gmail.com</a>
+    <a href="tel:01099048653">📞 01099048653</a>
+    <a href="https://github.com/MohamedEl3zpawy" target="_blank">💻 GitHub</a>
   </div>
+</header>
 
-  <div id="loginModal" class="modal">
-    <div class="panel">
-      <h3>Login</h3>
-      <form id="loginForm">
-        <div class="form-group"><label for="login-user">Username</label><input id="login-user" name="user" required></div>
-        <div class="form-group"><label for="login-pass">Password</label><input id="login-pass" name="pass" type="password" required></div>
-        <div style="display:flex;gap:.5rem;margin-top:.75rem;">
-          <button type="submit" class="btn">Login</button>
-          <button type="button" id="loginCancel" class="btn btn-secondary">Cancel</button>
-        </div>
-        <p id="loginMessage" style="margin-top:.5rem;color:#c00;display:none"></p>
-      </form>
+<nav>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#skills">Skills</a>
+  <a href="#experience">Experience</a>
+  <a href="#education">Education</a>
+  <a href="#certs">Certificates</a>
+</nav>
+
+<section id="about">
+  <h2 class="sec">About Me</h2>
+  <div class="card">
+    <p>A proactive Computer Science student at AAST with a strong foundation in Software Engineering and Object-Oriented Programming. Experienced in leading student organizations and managing technical events. Skilled in Java, C++, and Web Development, with a keen interest in Cybersecurity and problem-solving.</p>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="sec">Projects</h2>
+  <div class="card">
+    <h3>ON-RAI Gaming — E-Commerce Website</h3>
+    <p>A sleek, modern e-commerce platform for premium gaming gear and PC setups. Built with HTML, CSS, and JavaScript featuring a dark minimalist design, multi-page layout, cart functionality, and responsive UI.</p>
+    <a class="project-link" href="https://mohamedelzpawy.github.io/ONRAI-Simple-Project" target="_blank">🔗 Live Demo</a>
+    <a class="project-link" href="https://github.com/MohamedEl3zpawy/ONRAI-Simple-Project" target="_blank">⌥ GitHub</a>
+  </div>
+  <div class="card">
+    <h3>Smart Task Manager</h3>
+    <p>A Java desktop application for managing daily tasks. Built on OOP principles and Data Structures for efficient task tracking and organization.</p>
+    <a class="project-link" href="https://github.com/MohamedEl3zpawy/SmartTaskManager" target="_blank">⌥ GitHub</a>
+  </div>
+</section>
+
+<section id="skills">
+  <h2 class="sec">Technical Skills</h2>
+  <div class="card">
+    <div class="skills">
+      <span class="skill">Java</span>
+      <span class="skill">C++</span>
+      <span class="skill">C</span>
+      <span class="skill">JavaScript</span>
+      <span class="skill">HTML5</span>
+      <span class="skill">CSS3</span>
+      <span class="skill">OOP</span>
+      <span class="skill">Data Structures</span>
+      <span class="skill">Git & GitHub</span>
+      <span class="skill">Cybersecurity</span>
+      <span class="skill">Problem Solving</span>
+      <span class="skill">MS Office</span>
     </div>
   </div>
+</section>
 
-  <div id="toast" class="toast"></div>
+<section id="experience">
+  <h2 class="sec">Leadership & Experience</h2>
+  <div class="card">
+    <h3>Founder & President — Tech Team</h3>
+    <p class="date">Oct 2024 – Present</p>
+    <ul>
+      <li>Founded a student tech organization bridging academic study and practical skills</li>
+      <li>Led organization of technical workshops and student events</li>
+      <li>Built and managed a team across multiple technical committees</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>Vice President & Team Leader — Student Union</h3>
+    <ul>
+      <li>Managed student activities and coordinated between different committees</li>
+      <li>Represented the student body in official college events</li>
+      <li>Organized international conferences including ICCTA</li>
+    </ul>
+  </div>
+</section>
 
-  <footer>
-    <p>&copy; 2026 ON-RAI Gaming. All rights reserved.</p>
-  </footer>
+<section id="education">
+  <h2 class="sec">Education</h2>
+  <div class="card">
+    <h3>Arab Academy for Science, Technology & Maritime Transport — AAST</h3>
+    <p class="date">2024 – 2028</p>
+    <p>Bachelor of Science in Computer Science</p>
+    <p style="margin-top:8px; color:#888;">Relevant Coursework: Data Structures & Algorithms, OOP (Java), Database Systems, Networks, Cybersecurity Fundamentals</p>
+  </div>
+</section>
 
-  <script src="script.js?v=2.0"></script>
+<section id="certs">
+  <h2 class="sec">Certificates</h2>
+  <div class="card">
+    <span class="cert-badge">🏆 Cybersecurity — ICT Hub (Excellent)</span>
+    <span class="cert-badge">🏆 ICT Certification</span>
+    <span class="cert-badge">🏆 Certificate of Excellence — AAST</span>
+    <span class="cert-badge">🏆 Technical Event Organization</span>
+    <span class="cert-badge">🏆 Web Development & Git/GitHub</span>
+  </div>
+</section>
+
+<footer>
+  <p>Mohamed Sameh © 2025 · mohamedelzpawy.github.io</p>
+</footer>
+
 </body>
 </html>
